@@ -1,0 +1,16 @@
+{
+  "name": "eloquent-javascript-4e-exercises",
+  "version": "1.0.0",
+  "description": "Eloquent JavaScript (4th edition) exercises",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
