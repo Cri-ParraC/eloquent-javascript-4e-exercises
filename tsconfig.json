@@ -1,0 +1,29 @@
+{
+  // Node ejecuta los .ts directamente eliminando los tipos (type stripping).
+  // tsc solo se usa para comprobar tipos: `npm run typecheck`.
+  "compilerOptions": {
+    /* Sin transpilación */
+    "noEmit": true,
+
+    /* Entorno: Node.js moderno y APIs del navegador */
+    "target": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": ["node"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "moduleDetection": "force",
+
+    /* Compatibilidad con type stripping de Node */
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+
+    /* Comprobación de tipos */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
